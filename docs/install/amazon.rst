@@ -61,7 +61,8 @@ Let's create the server on which we can run JupyterHub.
 #. On the page **Step 1: Choose an Amazon Machine Image (AMI)** you are going 
    to pick the base image your remote server will have. The view will 
    default to the 'Quick-start' tab selected and just a few down the page, select 
-   **Ubuntu Server 18.04 LTS (HVM), SSD Volume Type - ami-XXXXXXXXXXXXXXXXX**.
+   **Ubuntu Server 18.04 LTS (HVM), SSD Volume Type - ami-XXXXXXXXXXXXXXXXX**, 
+   leaving `64-bit (x86)` toggled.
    
    .. image:: ../images/providers/amazon/select_ubuntu_18.png
       :alt: Click Ubuntu server 18.04
@@ -182,7 +183,7 @@ Let's create the server on which we can run JupyterHub.
    triggered, you need to choose what to do about an identifying key pair and 
    acknowledge your choice in order to proceed. If you already have a key pair you 
    can select to associate it with this instance, otherwise you need to 
-   **Create a new key pair**. Choosing to `Proceed with a key pair` is not 
+   **Create a new key pair**. Choosing to `Proceed without a key pair` is not 
    recommended as you'll have no way to access your server via SSH if anything
    goes wrong with the Jupyterhub and have no way to recover files via download.
    
